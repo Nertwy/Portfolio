@@ -1,12 +1,12 @@
 import image from "./assets/Code typing-amico 1.png";
 const AboutPage = () => {
   return (
-    <section className="flex justify-around w-full h-[640px]">
+    <section className="flex justify-around w-full h-[640px] font-sora text-gray-700">
       <div className="self-center">
         <img src={image} className="w-full h-full" />
       </div>
       <div className="flex-col w-1/4 self-center">
-        <span className="text-sky-500 text-2xl">About</span>
+        <span className="text-sky-500 text-2xl font-semibold">About</span>
         <h1 className="text-6xl font-bold w-2/3">About Me?</h1>
         <div className="flex flex-col">
           <span className="">

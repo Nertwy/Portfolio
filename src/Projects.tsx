@@ -1,13 +1,13 @@
 import { FC } from "react";
 import Image1 from "./assets/DishSite.png";
 import Image2 from "./assets/systemsApp.png";
-
+import Image3 from './assets/Portfolio.png'
 const Link1: Link[] = [
   { link: "https://github.com/Nertwy/Ts_Dish_Site", name: "GitHub" },
 ];
 const Link2: Link[] = [
   { link: "https://github.com/Nertwy/hr-system", name: "GitHub" },
-  { link: "hr-system-ndgf8wxau-nertwy.vercel.app", name: "Vercel View" },
+  { link: "https://hr-system-cyan.vercel.app/", name: "Vercel View" },
 ];
 const Link3: Link[] = [
   { link: "https://github.com/Nertwy/Portfolio", name: "GitHub" },
@@ -16,10 +16,10 @@ const Link3: Link[] = [
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center pt-8">
+    <section className="flex flex-col items-center pt-8 font-sora text-gray-700">
       <div>
         <h2 className="text-4xl text-sky-500 text-center">Projects</h2>
-        <h1 className="text-5xl font-bold font-sora text pb-4">What have I made?</h1>
+        <h1 className="text-5xl font-bold text pb-4">What have I made?</h1>
       </div>
       <div className="flex space-x-28 pb-20 justify-evenly mx-8">
         <Card
@@ -37,7 +37,7 @@ const Projects = () => {
         <Card
           description={"Portfolio website that is always up-to-date."}
           title={"Portfolio Website Design"}
-          image={Image1}
+          image={Image3}
           links={Link3}
         />
       </div>
@@ -63,7 +63,7 @@ const Card: FC<CardProp> = ({ title, description, image, links }) => {
         <p className="text-sm">{description}</p>
         <div className="flex space-x-4">
           {links?.map((val, i) => (
-            <a href={val.link} key={i} className="text-slate-500">
+            <a href={val.link} key={i} className="text-slate-500 underline hover:text-black">
               {val.name}
             </a>
           ))}

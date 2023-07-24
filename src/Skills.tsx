@@ -8,9 +8,9 @@ import Image7 from "./assets/Prisma.png";
 import Image8 from "./assets/Typescript.png";
 const Skills = () => {
   return (
-    <section className="flex flex-col content-center items-center py-16 bg-sky-100">
-      <h1 className="text-sky-500 text-4xl font-bold">Skills</h1>
-      <h2 className="text-5xl pb-6 font-bold ">What I am capable of?</h2>
+    <section className="flex flex-col content-center items-center py-16 bg-sky-100 font-sora">
+      <h1 className="text-sky-500 text-4xl font-bold pb-8">Skills</h1>
+      <h2 className="text-5xl pb-8 font-bold text-gray-700">What I am capable of?</h2>
       <div className="flex justify-center h-28 space-x-8">
         <img src={Image1} />
         <img src={Image2} />
