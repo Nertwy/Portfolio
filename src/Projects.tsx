@@ -7,11 +7,11 @@ const Link1: Link[] = [
 ];
 const Link2: Link[] = [
   { link: "https://github.com/Nertwy/hr-system", name: "GitHub" },
-  { link: "https://hr-system-cyan.vercel.app/", name: "Vercel View" },
+  { link: "https://hr-system-ndgf8wxau-nertwy.vercel.app/?vercelToolbarCode=HwbU5TGyH5znR3H", name: "Vercel View" },
 ];
 const Link3: Link[] = [
   { link: "https://github.com/Nertwy/Portfolio", name: "GitHub" },
-  { link: "https://portfolio-nertwy.vercel.app/", name: "Vercel View" },
+  { link: "https://portfolio-efwof5uq4-nertwy.vercel.app/?vercelToolbarCode=L2-Tx4aTwnV1-Hb", name: "Vercel View" },
 ];
 
 const Projects = () => {

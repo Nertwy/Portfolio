@@ -1,32 +1,32 @@
 const NavBar = () => {
   return (
-    <nav className="h-24 flex flex-col md:flex-row items-center justify-around bg-sky-100 text-gray-700">
+    <nav className="h-24 flex flex-col md:flex-row items-center justify-around bg-sky-100 text-gray-700 ">
       <a className="text-3xl font-bold mb-4 pl-20 md:mb-0 md:mr-52 font-sora italic text-gray-700">
         Nertwy
       </a>
-      <ul className="flex items-center font-sora">
+      <ul className="flex items-center font-sora ">
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-13">
-          <a className="text-3xl" href="#">
+          <a className="text-3xl hover:text-black" href="#">
             Home
           </a>
         </li>
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-13">
-          <a className="text-3xl" href="#">
+          <a className="text-3xl hover:text-black" href="#">
             About
           </a>
         </li>
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-13">
-          <a className="text-3xl" href="#">
+          <a className="text-3xl hover:text-black" href="#">
             Skill
           </a>
         </li>
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-13">
-          <a className="text-3xl" href="#">
+          <a className="text-3xl hover:text-black" href="#">
             Project
           </a>
         </li>
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-0">
-          <a className="text-3xl" href="#">
+          <a className="text-3xl hover:text-black" href="#">
             Contact
           </a>
         </li>
