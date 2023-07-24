@@ -1,4 +1,4 @@
-// import Image1 from "./assets/download.svg";
+import Image1 from "./assets/no_hands_V2.png";
 const PhotoPage = () => {
   return (
     <section className="bg-sky-100 h-96 pb-20 pl-20 pr-20">
@@ -13,7 +13,7 @@ const PhotoPage = () => {
             </span>
           </div>
           <div className="flex justify-between">
-            <button className="inline-flex items-center bg-sky-700 text-white py-2 px-4 rounded-md w-48">
+            <button className="inline-flex items-center bg-sky-700 text-white py-2 px-4 rounded-md w-48 text-center">
               <span className="pr-4">Download CV</span>
               <svg
                 viewBox="0 0 16 16"
@@ -41,8 +41,10 @@ const PhotoPage = () => {
             </button>
           </div>
         </div>
-        <div className="pl-10 float-right items-center">
-          <div className="bg-sky-700 w-96 h-72 rounded-3xl shadow-md"></div>
+        <div className="pl-10 float-right items-center pt-10">
+          <div className="bg-sky-700 w-96 h-72 rounded-3xl shadow-md overflow-hidden">
+            <img src={Image1}  className="h-fit w-fit"/>
+          </div>
         </div>
       </div>
     </section>
