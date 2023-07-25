@@ -1,29 +1,29 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-const lngs = {
-  en: { nativeName: "English" },
-  uk: { nativeName: "Ukrainian" },
-};
+// const lngs = {
+//   en: { nativeName: "English" },
+//   uk: { nativeName: "Ukrainian" },
+// };
 const NavBar = () => {
-  const { t, i18n } = useTranslation();
+  const { t, /*i18n*/ } = useTranslation();
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const changeLang = () => {
-    {
-      Object.keys(lngs).map((lng) => (
-        <button
-          key={lng}
-          style={{
-            fontWeight: i18n.resolvedLanguage === lng ? "bold" : "normal",
-          }}
-          type="submit"
-          onClick={() => i18n.changeLanguage(lng)}
-        >
-          {lngs[lng as keyof typeof lngs].nativeName}
-        </button>
-      ));
-    }
-  };
+  // const changeLang = () => {
+  //   {
+  //     Object.keys(lngs).map((lng) => (
+  //       <button
+  //         key={lng}
+  //         style={{
+  //           fontWeight: i18n.resolvedLanguage === lng ? "bold" : "normal",
+  //         }}
+  //         type="submit"
+  //         onClick={() => i18n.changeLanguage(lng)}
+  //       >
+  //         {lngs[lng as keyof typeof lngs].nativeName}
+  //       </button>
+  //     ));
+  //   }
+  // };
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
