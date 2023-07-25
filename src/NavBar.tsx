@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 const lngs = {
   en: { nativeName: "English" },
   uk: { nativeName: "Ukrainian" },
@@ -30,10 +30,10 @@ const NavBar = () => {
 
   return (
     <nav className="h-24 md:h-auto flex flex-col xl:pl-20 md:flex-row items-center justify-between bg-sky-100 text-gray-700 md:pl-0 xl:pr-20">
-      <button onClick={() => i18n.changeLanguage("uk")}>
+      {/* <button onClick={() => i18n.changeLanguage("uk")}>
         CHANGE LANGUAGE
-      </button>
-      <a className="text-3xl font-bold mb-4  md:mb-0 font-sora  italic text-gray-700 ">
+      </button> */}
+      <a className="text-3xl font-bold mb-4 font-nunito md:mb-0 text-gray-700 italic">
         Nertwy
       </a>
       <input
@@ -65,7 +65,7 @@ const NavBar = () => {
         &#10005;
       </label>
       <ul
-        className={`flex items-center font-sora md:flex ${
+        className={`flex items-center font-nunito md:flex ${
           isMenuOpen
             ? "h-[100vh] fixed top-[0px] flex flex-col justify-center items-center w-full md:hidden bg-white z-10 duration-1000"
             : "hidden"

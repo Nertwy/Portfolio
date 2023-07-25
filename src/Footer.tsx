@@ -18,7 +18,7 @@ const Footer = () => {
     document.body.removeChild(tempTextarea);
   };
   return (
-    <footer className="flex flex-col justify-center pl-8 font-sora text-gray-700">
+    <footer className="flex flex-col justify-center pl-8 font-nunito text-gray-700">
       <span className="text-sky-500 text-4xl pb-4 font-bold pt-4">
         Contacts
       </span>

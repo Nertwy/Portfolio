@@ -1,7 +1,7 @@
 import image from "./assets/Code typing-amico 1.png";
 const AboutPage = () => {
   return (
-    <section className="sm:flex justify-around w-full font-sora text-gray-700 py-10">
+    <section className="sm:flex justify-around w-full font-nunito text-gray-700 py-10">
       <div className="self-center">
         <img src={image} className="w-full h-full" />
       </div>

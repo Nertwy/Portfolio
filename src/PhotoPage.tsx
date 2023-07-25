@@ -3,7 +3,7 @@ import pdf from "./assets/Denis_Bosiuk_CV.pdf";
 // md:items-center md:justify-between
 const PhotoPage = () => {
   return (
-    <section className="bg-sky-100 h-auto font-sora pb-20 xl:pl-20 xl:pr-20 md:flex items-center justify-between">
+    <section className="bg-sky-100 h-auto font-nunito pb-20 xl:pl-20 xl:pr-20 md:flex items-center justify-between">
       <div className="flex flex-col items-start text-gray-700">
         <span className="text-sky-500 text-2xl">Hi Everyone, I am</span>
         <h1 className="text-6xl font-bold">Denis Bosiuk</h1>

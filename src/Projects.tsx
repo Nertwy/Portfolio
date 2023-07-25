@@ -22,7 +22,7 @@ const Link3: Link[] = [
 
 const Projects = () => {
   return (
-    <section className="flex flex-col items-center pt-8 font-sora text-gray-700 text-center">
+    <section className="flex flex-col items-center pt-8 font-nunito text-gray-700 text-center">
       <h2 className="text-4xl text-sky-500 text-center">Projects</h2>
       <h1 className="text-5xl font-bold text pb-4">What have I made?</h1>
       <div className="md:flex md:space-x-28 justify-evenly mx-8">
