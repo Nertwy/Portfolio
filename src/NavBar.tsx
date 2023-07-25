@@ -1,10 +1,35 @@
+import { useState } from "react";
+
 const NavBar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="h-24 flex flex-col md:flex-row items-center justify-around bg-sky-100 text-gray-700 ">
-      <a className="text-3xl font-bold mb-4 pl-20 md:mb-0 md:mr-52 font-sora italic text-gray-700">
+    <nav className="h-24 md:h-auto flex flex-col xl:pl-20 md:flex-row items-center justify-between bg-sky-100 text-gray-700 md:pl-0 xl:pr-20">
+      <a className="text-3xl font-bold mb-4  md:mb-0 font-sora  italic text-gray-700 ">
         Nertwy
       </a>
-      <ul className="flex items-center font-sora ">
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        className="hidden md:hidden"
+        checked={isMenuOpen}
+        onChange={handleMenuToggle}
+      />
+      <label
+        htmlFor="menu-toggle"
+        className="md:hidden text-3xl cursor-pointer absolute right-2 top-2"
+      >
+        &#9776;
+      </label>
+      <ul
+        className={`flex items-center font-sora md:flex ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
+      >
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-13">
           <a className="text-3xl hover:text-black" href="#">
             Home
