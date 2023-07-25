@@ -25,9 +25,26 @@ const NavBar = () => {
       >
         &#9776;
       </label>
+      <input
+        type="checkbox"
+        id="menu-close"
+        className="hidden md:hidden"
+        checked={!isMenuOpen}
+        onChange={handleMenuToggle}
+      />
+      <label
+        htmlFor="menu-close"
+        className={`md:hidden text-3xl cursor-pointer fixed right-2 top-2 z-20 ${
+          isMenuOpen ? "visible" : "hidden"
+        }`}
+      >
+        &#10005;
+      </label>
       <ul
         className={`flex items-center font-sora md:flex ${
-          isMenuOpen ? "block" : "hidden"
+          isMenuOpen
+            ? "h-[100vh] fixed top-[0px] flex flex-col justify-center items-center w-full md:hidden bg-white z-10 duration-1000"
+            : "hidden"
         }`}
       >
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-13">
