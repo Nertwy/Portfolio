@@ -13,9 +13,15 @@ const PhotoPage = () => {
             pellentesque tellus tempus purus integer nisi cras fermentum.
           </span>
         </div>
-        <div className="flex w-full justify-between pb-4">
-          <a href={pdf} download target="_blank" rel="noreferrer">
-            <button className="inline-flex items-center bg-sky-700 text-white py-2 px-4 rounded-md w-48 text-center hover:bg-sky-900 mr-2">
+        <div className="sm:flex-row w-full sm:justify-between pb-4 flex flex-col space-y-2 items-center">
+          <a
+            href={pdf}
+            download
+            target="_blank"
+            rel="noreferrer"
+            className=""
+          >
+            <button className="inline-flex items-center bg-sky-700 text-white py-2 px-4 rounded-md w-48 text-center hover:bg-sky-900 sm:mr-2">
               <span className="pr-4">Download CV</span>
               <svg
                 viewBox="0 0 16 16"
@@ -45,11 +51,7 @@ const PhotoPage = () => {
         </div>
       </div>
       <div className="flex xl:mt-10 align-middle bg-sky-700 md:rounded-3xl shadow-md overflow-hidden rounded-full items-center justify-center mt-5">
-        <img
-          src={Image1}
-          className="h-fit w-auto"
-          alt="Profile"
-        />
+        <img src={Image1} className="h-fit w-auto" alt="Profile" />
       </div>
     </section>
   );

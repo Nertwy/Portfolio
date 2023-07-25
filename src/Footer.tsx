@@ -24,7 +24,7 @@ const Footer = () => {
       </span>
       <span className="text-5xl pb-6 font-bold">Get in touch</span>
       <span
-        className="text-3xl italic pb-4 cursor-pointer"
+        className="text-xl italic pb-4 cursor-pointer sm:text-3xl"
         onClick={copyToClipboard}
       >
         {email}
@@ -33,7 +33,6 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/denys-bosiuk-a847a1217/">
           <img src={Image1} className="w-12 h-12" />
         </a>
-
         <a href="https://github.com/Nertwy">
           <img src={Image2} className="w-12 h-12" />
         </a>

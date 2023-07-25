@@ -8,18 +8,20 @@ import Image7 from "./assets/Prisma.png";
 import Image8 from "./assets/Typescript.png";
 const Skills = () => {
   return (
-    <section className="flex flex-col content-center items-center py-16 bg-sky-100 font-sora">
+    <section className="flex flex-col content-center items-center py-16 bg-sky-100 font-sora text-center">
       <h1 className="text-sky-500 text-4xl font-bold pb-8">Skills</h1>
-      <h2 className="text-5xl pb-8 font-bold text-gray-700">What I am capable of?</h2>
-      <div className="flex justify-center h-28 space-x-8">
-        <img src={Image1} />
-        <img src={Image2} />
-        <img src={Image3} />
-        <img src={Image4} />
-        <img src={Image5} />
-        <img src={Image6} />
-        <img src={Image7} />
-        <img src={Image8} />
+      <h2 className="text-5xl pb-8 font-bold text-gray-700">
+        What I am capable of?
+      </h2>
+      <div className="grid gap-4 grid-cols-2 md:flex w-full place-items-center sm:grid-cols-3 justify-center">
+        <img src={Image1} className="h-20" />
+        <img src={Image2} className="h-20" />
+        <img src={Image3} className="h-20" />
+        <img src={Image4} className="h-20" />
+        <img src={Image5} className="h-20 " />
+        <img src={Image6} className="h-20 " />
+        <img src={Image7} className="h-20 " />
+        <img src={Image8} className="h-20 " />
       </div>
     </section>
   );
