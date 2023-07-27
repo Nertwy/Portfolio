@@ -1,6 +1,8 @@
 import Image1 from "./assets/linkedin.svg";
 import Image2 from "./assets/github.svg";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   const email = "deniskabos@gmail.com";
   const copyToClipboard = () => {
     const textToCopy = email;
@@ -20,9 +22,11 @@ const Footer = () => {
   return (
     <footer className="flex flex-col justify-center pl-8 font-nunito text-gray-700">
       <span className="text-sky-500 text-4xl pb-4 font-bold pt-4">
-        Contacts
+        {t("description.projContacts")}
       </span>
-      <span className="text-5xl pb-6 font-bold">Get in touch</span>
+      <span className="text-5xl pb-6 font-bold">
+        {t("description.projGetInTouch")}
+      </span>
       <span
         className="text-xl italic pb-4 cursor-pointer sm:text-3xl"
         onClick={copyToClipboard}
