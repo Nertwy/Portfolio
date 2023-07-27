@@ -36,6 +36,7 @@ const Projects = () => {
       <div className="md:flex md:space-x-28 justify-evenly mx-8">
         {newLink.map((elem, i) => (
           <Card
+            key={i}
             title={t(`description.projTitle.${i}`)}
             links={elem}
             description={t(`description.projDesc.${i}`)}

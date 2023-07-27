@@ -76,9 +76,9 @@ const NavBar = () => {
           </a>
         </li>
         <li className="px-4 py-2 mb-4 md:mb-0 md:mr-0">
-          <a className="text-3xl hover:text-black" href="#">
+          <div className="text-3xl hover:text-black">
             <ChangeLangBtn />
-          </a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -135,8 +135,8 @@ const ChangeLangBtn = () => {
           <path
             d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
+            strokeWidth="2"
+            strokeLinecap="round"
           />
         </svg>
       </button>
