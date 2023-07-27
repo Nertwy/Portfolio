@@ -90,7 +90,7 @@ interface CountryInfo {
   name: string;
 }
 const countries: CountryInfo[] = [
-  { flag: "🇵🇱", name: "Polski" },
+  // { flag: "🇵🇱", name: "Polski" },
   { flag: "🇺🇸", name: "English US" },
   { flag: "🇺🇦", name: "Українська" },
 ];
@@ -141,11 +141,11 @@ const ChangeLangBtn = () => {
         </svg>
       </button>
       <div
-        className={`hs-dropdown-menu 
-        transition-[opacity,margin] duration 
-        hs-dropdown-open:opacity-100 opacity-0 
-        w-56 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md 
-        rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 
+        className={`hs-dropdown-menu
+        transition-[opacity,margin] duration
+        hs-dropdown-open:opacity-100 opacity-0
+        w-56 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md
+        rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700
         dark:divide-gray-700
         `}
         aria-labelledby="hs-dropdown-basic"
