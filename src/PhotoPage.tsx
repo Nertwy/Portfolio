@@ -1,6 +1,7 @@
 import Image1 from "./assets/no_hands_V2.png";
 import pdf from "./assets/Denis_Bosiuk_CV.pdf";
 import { useTranslation } from "react-i18next";
+import TypingAnimation from "./TypeComponent";
 const PhotoPage = () => {
   const { t } = useTranslation();
   return (
@@ -12,6 +13,9 @@ const PhotoPage = () => {
         <h1 className="text-6xl font-bold">
           {t("description.photoPage_Name")}
         </h1>
+        <h2 className="text-5xl font-bold">
+          <TypingAnimation strings={["Passion Developer","Creative","Full Stack Engineer","Tea Enthusiast"]}/>
+        </h2>
         <div className="flex flex-col">
           <span className="pb-6">{t("description.photoPage_text")}</span>
         </div>

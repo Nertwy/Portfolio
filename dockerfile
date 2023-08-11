@@ -1,6 +1,6 @@
-FROM node
+FROM node:20
 WORKDIR /app
-COPY package.json .
+COPY package.json pnpm-lock.yaml ./
 RUN npm i
 COPY . .
 ## EXPOSE [Port you mentioned in the vite.config file]
